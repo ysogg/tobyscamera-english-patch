@@ -1,0 +1,6 @@
+name: tobyscamera-english-patch
+version: 1.0.0
+main: tcenglish.plugin.EnglishPatchPlugin
+api-version: '1.21'
+softdepend: [TobysCamera]
+description: English translation patch for TobysCamera 0.2.10 (needs -javaagent, see README.md).

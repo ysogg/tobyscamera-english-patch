@@ -1,0 +1,17 @@
+# Build output (recreated by build.sh)
+build/
+*.class
+*.jar
+
+# IDEs / editors
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
