@@ -1,6 +1,5 @@
-# An English Language Patch For TobysCamera (0.2.10) Minecraft Plugin
+# An English Language Patch For TobysCamera Minecraft Plugin
 
----
 
 #### TobysCamera has its Chinese text compiled with no language file, so this patch is one jar with two parts:
 
