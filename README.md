@@ -16,8 +16,8 @@
 - Place this plugin in your server's plugins folder
 
 - Your server launch script must contain:  
-```-javaagent:plugins/tobyscamera-english-patch.jar``` before  ```-jar paper.jar```
-> This plugin is only tested on a PaperMC server. If it doesn't work on other types of servers please leave an issue and I'll address it as soon as possible.
+```-javaagent:plugins/tobyscamera-english-patch.jar``` before  ```-jar <paper/purpur/folia>.jar```
+> Supports Paper, Purpur, and Folia. If it doesn't work on your server please leave an issue and I'll address it as soon as possible.
 
 To remove: delete the jar AND the -javaagent part of run.bat. Items already
 converted keep English lore, and the Chinese plugin will then add duplicate film

@@ -40,7 +40,7 @@ public final class EnglishPatchPlugin extends JavaPlugin implements Listener {
             return;
         }
         getServer().getPluginManager().registerEvents(this, this);
-        for (Player p : getServer().getOnlinePlayers()) migratePlayer(p);
+        for (Player p : getServer().getOnlinePlayers()) p.getScheduler().run(this, task -> migratePlayer(p), null);
         getLogger().info("English agent active (" + System.getProperty("tcenglish.replaced", "0")
                 + " strings translated so far; more are translated as TobysCamera loads them).");
     }

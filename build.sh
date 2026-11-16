@@ -11,7 +11,7 @@ if pwd -W >/dev/null 2>&1; then SEP=';'; else SEP=':'; fi
 HERE="$(cd "$(dirname "$0")" && (pwd -W 2>/dev/null || pwd))"
 SERVER="${SERVER:-$(pwd -W 2>/dev/null || pwd)}"
 LIB="$SERVER/libraries"
-CP=$(find "$LIB" -name 'paper-api-*.jar' -o -name 'adventure-api-5*.jar' -o -name 'adventure-key-5*.jar' \
+CP=$(find "$LIB" -name 'paper-api-*.jar' -o -name 'purpur-api-*.jar' -o -name 'folia-api-*.jar' -o -name 'adventure-api-5*.jar' -o -name 'adventure-key-5*.jar' \
       -o -name 'examination-api-*.jar' -o -name 'annotations-*.jar' -o -name 'jspecify-*.jar' -o -name 'guava-*.jar' | tr '\n' "$SEP")
 rm -rf "$HERE/build"; mkdir -p "$HERE/build/classes"
 find "$HERE/src" -name '*.java' | sed 's/.*/"&"/' > "$HERE/build/sources.txt"
